@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>amazon.com</title>
+    <style>
+        body{
+            background-color: pink;
+        display: grid;            
+        }
+        .top{
+            cursor: pointer;
+        }
+        .sai{
+            background-color:white;
+            width:100%;
+            height: 25px;
+            border:20px;
+            margin-top: 0px;
+            text-align: center;
+        margin-left:0px ;
+        }
+        .gaming{
+           font-weight: bolder; 
+           font-size: 25px;
+           margin-left:10px;
+           
+        }
+        .sports{
+            font-size:25px ;
+            font-weight: bolder;
+            margin-left: 10px;
+            margin-top: 20px;
+        }
+        .container{
+            background-color:white;
+            width: 350px;
+            display: flex;
+            height: 420px;
+        margin-top: 10px;
+            margin-left: 10px;   
+        }
+        .head{
+            position: absolute;
+            margin-top: 55px;
+            margin-left: 0px;
+            width: 20px;
+            mix-blend-mode: multiply;
+
+        }
+        .hear{
+            margin-top: 0px;
+            margin-left: 25px;
+            font-size: 13px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .key{
+            position:absolute;
+            margin-top: 55px;
+            margin-left: 155px;
+            mix-blend-mode: multiply;
+        }
+        .boards{
+        margin-top: -5px;
+        font-size:13px ;
+        font-family: 'Courier New', Courier, monospace;
+        }
+        .mouse{
+            position:absolute;
+            margin-top: 250px;
+            mix-blend-mode: multiply;
+        }
+        .mouse1{
+            margin-top: -15px;
+            margin-left: 7px;
+            font-size: 13px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .chair{
+            position:absolute;
+            margin-top:250px ;
+            margin-left:155px ;
+            mix-blend-mode: multiply;
+        }
+        .chair1{
+               margin-top: -15px;
+font-size: 13px;
+margin-left: 7px;
+font-family: 'Courier New', Courier, monospace;
+        }
+        .water1{
+           font-size: 13px;
+            font-family: 'Courier New', Courier, monospace;
+margin-top: -3px;
+        }
+        .home1{
+            font-size:13px;
+            font-family: 'Courier New', Courier, monospace;
+            margin-top: -3px;
+        }
+        .name{
+            font-size: 13px;
+            font-family: 'Courier New', Courier, monospace;
+            margin-top: -3px;
+        }
+        .name1{
+            font-size: 13px;
+            font-family: 'Courier New', Courier, monospace;
+            margin-top:-3px ;
+        }
+        .name2{
+            font-size: 13px;
+            font-family: 'Courier New', Courier, monospace;
+            margin-top: -3px;
+        }
+        .name3{
+            font-size: 13px;
+            font-family: 'Courier New', Courier, monospace;
+            margin-top: -3px;
+        }
+        .name4{
+            font-size: 13px;
+            font-family: 'Courier New', Courier, monospace;
+            margin-top: -3px;
+        }
+        .name5{
+            font-size: 13px;
+            font-family: 'Courier New', Courier, monospace;
+            margin-top: -3px;
+        }
+        .name6{
+            background-color:green;
+            width:100px;
+            color: white;
+            height: 20px;
+            text-align: center;
+            font-size: 15px;
+        }
+        .name8{
+            background-color: green;
+            width:100px;
+            color: white;
+            text-align: center;
+            font-size: 15px;
+            margin-left: -120px;
+        }
+        .name7{
+            color: green;
+            font-size: 13px;
+            margin-top: -30px;
+            margin-left: 110px;
+
+        }
+        .name11,.name17,.name23,.name29,.name35{
+            color:green;
+            font-size: 13px;
+            margin-top: -30px;
+            margin-left: 85px;
+        
+        }
+        .name9{
+            color: green;
+            font-size: 15px;
+            margin-top:-30px ;
+        }
+        .name10{
+            background-color:green;
+            width: 70px;
+            height: 20px;
+            text-align: center;
+            font-size: 15px;
+            color: white;
+            margin-top: 0px;
+            margin-left: 10px;
+        }
+        .name16,.name22,.name28,.name34{
+            background-color: green;
+            width: 70px;
+            height: 20px;
+            text-align: center;
+            font-size: 15px;
+            color: white;
+            
+        }
+        .name12,.name21{
+            font-size: 15px;
+            margin-left: 10px;
+        }
+        .name27,.name33,.name39{
+            font-size: 15px;
+            margin-top: -5px;
+            margin-left: 10px;
+        }
+        .name13,.name18,.name24,.name30,.name36{
+            font-weight: bolder;
+            margin-left: 10px;
+            font-size: 15px;
+            margin-top: 10px;
+        }
+        .name14,.name19,.name25,.name31,.name37{
+            font-size: 13px;
+            margin-top: -30px;
+            margin-left: 60px;
+        }
+        .name15,.name20,.name26,.name32,.name38{
+            font-size: 13px;
+            margin-top:-28px ;
+            margin-left: 115px;
+            text-decoration: line-through;
+        }
+        
+        .kitchen1{
+            font-size: 13px;
+           font-family: 'Courier New', Courier, monospace;
+            margin-top: -3px;
+        }
+        .health1{
+            font-size:13px;
+            font-family: 'Courier New', Courier, monospace;
+            margin-top: -3px;
+        }
+        .mens{
+            font-size:13px ;
+            font-family: 'Courier New', Courier, monospace;
+margin-top: -3px;
+        }
+    .womens{
+        font-size: 13px;
+        font-family: 'Courier New', Courier, monospace;
+        margin-top: -3px;
+    }
+        .head:active,.key:active,.mouse:active,.chair:active,.top:active{
+            opacity: 0.9;
+        }
+        .container1{
+            background-color:white ;
+            width:400px;
+            height:420px; 
+            margin-left: 370px;
+            margin-top: -420px;
+        }
+        .space{
+            font-weight: bolder;
+            font-size: 25px;
+            margin-left: 40px;
+            margin-top: 30px;
+            
+        }
+        .giftsdad{
+            font-weight:bolder ;
+            font-size: 25px;
+            margin-left: 20px;
+margin-top: 40px;
+
+        }
+        .personal{
+            font-weight: bold;
+            font-size: 25px;
+            margin-left: 20px;
+            margin-top: 40px;
+        }
+        .toys{
+            font-weight: bolder;
+            font-size: 25px;
+            margin-top: 40px;
+            margin-left: 20px;
+        }
+        .topdeal{
+            font-weight: bolder;
+            font-size: 25px;
+            margin-top: 40px;
+            margin-left: 20px;
+            
+        }
+        .under{
+            font-weight: bolder;
+            font-size: 25px;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        .fashon2{
+font-weight: bolder;
+font-size: 25px;
+margin-left: 40px;
+margin-top: 40px;
+        }
+        .deals{
+            font-size: 25px;
+            font-weight: bolder;
+            margin-top: 30px;
+            margin-left:40px ;
+            
+        }
+        .shopping{
+            font-size: 25px;
+            font-weight:bolder;
+            margin-left: 20px;
+        }
+        .water{
+            position: absolute;
+            margin-top: 15px;
+            margin-left: 5px;
+    
+        }
+        .home{
+            margin-left:205px ;
+            margin-top: 15px;
+            width:50px;
+        }
+        .kitchen{
+            margin-top: 50px;
+            margin-left: 5px;
+        }
+        .health{
+            margin-top: -145px;
+            margin-left:205px ;
+        }
+        .water:active,.home:active,.kitchen:active,.health:active,.shop:active,.fashon:active,.fashon1:active{
+            opacity: 0.9;
+        }
+        
+        .container2{
+            background-color: white;
+            width: 400px;
+            height:420px ;
+            margin-left: 780px;
+            margin-top:-420px ;
+        }
+        .shop{
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        .container3{
+            background-color: white;
+            width:310px;
+            height:420px;
+            margin-top:-420px;
+            margin-left: 1190px;
+        }
+        .fashon{
+            margin-top: 10px ;
+            margin-left: 10px;
+        }
+        .fashon1{
+            margin-top:-175px;
+            margin-left: 150px;
+        }
+        .container4{
+            background-color: white;
+            width:1490px;
+            height: 300px;
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+        .tech{
+            margin-top: 50px;
+            margin-left: 10px;
+        }
+        .tech1{
+            margin-top: -220px;
+            margin-left: 400px;
+        }
+        .tech2{
+            margin-top: -220px;
+            margin-left: 620px;
+        }
+        .tech3{
+            margin-top: -200px;
+            margin-left: 780px;
+        }
+        .tech4{
+            margin-top: -200px;
+            margin-left: 1120px;
+            mix-blend-mode: multiply;
+        }
+        .container5{
+            background-color: white;
+            width: 400px;
+            height: 420px;
+            margin-top: 20px;
+            margin-left: 370px;
+        }
+        .gifts{
+            margin-top: 20px;
+            margin-left:10px ;
+        }
+        .gifts1{
+            margin-top: -145px;
+            margin-left: 205px;
+        }
+        .gifts2{
+            margin-top: 30px;
+            margin-left: 10px;
+        }
+        .gifts3{
+            margin-top: -145px;
+            margin-left: 205px;
+        }
+        .container6{
+            background-color: white;
+            width:350px;
+            height: 420px;
+            margin-top: -420px;
+            margin-left: 10px;
+                }
+                .beauty{
+                    margin-top:30px;
+                     margin-left:10px;
+
+                }
+                .beauty1{
+                    margin-top: -145px;
+                    margin-left:145px ;
+                }
+                .container7{
+                    background-color: white;
+                    width:400px;
+                    height: 420px;
+                    margin-top: -420px;
+                    margin-left: 780px;
+                }
+                .toy{
+                    margin-top: 20px;
+                    margin-left: 10px;
+                }
+                .container8{
+                    background-color: white;
+                    width: 310px;
+                    height: 420px;
+                    margin-top:-420px;
+                    margin-left: 1190px;
+                    position: absolute;
+                }
+                .topdeals{
+                    margin-top: 30px;
+                    margin-left: 20px;
+                    position: absolute;
+                }
+                .container9{
+                    background-color: white;
+                    width:1490px;
+                    height: 350px;
+                    position: absolute;
+                    margin-top: 20px;
+                    margin-left: 10px;
+                }
+                .under25{
+                    margin-top:10px;
+                }
+                .under251{
+                    margin-top: -320px;
+                    margin-left: 300px;
+
+                }
+                .under252{
+                    margin-top: -310px;
+                    margin-left: 590px;
+                }
+                .under253{
+                    margin-top: -310px;
+                    margin-left: 870px;
+                }
+                .under254{
+                    margin-top: -310px;
+                    margin-left: 1200px;
+                }
+                .container10 {
+                width: 1490px;
+                height: 800px;
+                background-color: white;
+                margin-top: 390px;
+                margin-left: 10px;
+                position: absolute;
+                }
+                .hr{
+                    margin-top: 50px;
+                }
+                .shoppingimg{
+                    margin-top: 30px;
+                    
+                }
+                .your1,.your3,.your4,.your6,.your8,.your9{
+                    margin-left: 10px;
+                    color: blue;
+                    outline: none;
+                }
+                .your1:hover,.your2:hover,.your3:hover,.your4:hover,.your5:hover,.your6:hover,.your7:hover,.your8:hover,.your9:hover{
+                color: red;
+                cursor: pointer;
+                }
+                .container10 a{
+                    text-decoration: none;
+                }
+                .your2,.your5,.your7{
+                    margin-top: -10px;
+                    margin-left:10px;
+                    color: blue;
+                 font-size: 13px;
+                 outline: none;   
+                }
+                .container11{
+                    background-color: darkslategrey;
+                    width: 100%;
+                    height: 50px;
+                    
+                }
+                nav{
+        display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                }
+                nav  a{
+                    color: white;
+                    text-decoration: none;
+                    padding: 16px 15px;
+                    border-radius: 20px;
+        }            
+        nav a:hover{
+            transition: 0.25s;
+            background: yellowgreen;
+        }
+        .nav{
+            width: 20px;
+            height: 2px;
+            display: flex;
+            margin-left: 10px;
+        background-color: white;
+        margin-top: 0px;
+
+        }
+        .nav1{
+            width:20px;
+            height: 2px;
+            display:flex;
+            background-color: white;
+            margin-top: 3px;
+            margin-left: 10px;
+        }
+        .nav2{
+            width: 20px;
+            height: 2px;
+            background-color: white;
+            margin-top: 3px;
+            margin-left: 10px;
+        }
+        .all{
+            margin-left: 38px;
+            color: white;
+            margin-top: -15px;
+        }
+        .container12{
+            padding: 18px 15px;
+            border-radius: 20px;
+               }
+               .container12:hover{
+                transition: 0.25s;
+                background-color: yellowgreen;
+               }
+               .container12:active{
+                background: red;
+               } 
+               nav a:active{
+                background: red;
+               }
+               .star1,.star3,.star5,.star6,.star8,.star9{
+                margin-left: 10px;
+                margin-top:-15px;
+                font-size: 20px;
+                color: orange;
+               }
+               .star2,.star7,.star10{
+                margin-top: -47px;
+                margin-left: 77px;
+                font-size: 20px;
+               }
+               .star4{
+                margin-top: -47px;
+                margin-left: 60px;
+                font-size: 20px;
+               }
+               .font,.font1,.font3,.font4,.font5,.font6{
+                margin-top: -40px;
+                margin-left: 95px;
+                font-size: 15px;
+               }
+               .n1,.n4{
+                margin-left: 10px;
+                font-size: 13px;
+                margin-top: -18px;
+               }
+               .symbol,.symbol2,.symbol5,.symbol7,.symbol9{
+                margin-left: 12px;
+                margin-top: -10px;
+                font-size: 15px;
+               }
+               .no1,.no2,.no4,.no5,.no6{
+                margin-top: -32px;
+                margin-left: 20px;
+                font-size: 20px;
+               }
+               .symbol1,.symbol3,.symbol6,.symbol8,.symbol10{
+                margin-left: 10px;
+                margin-top: -18px;
+                font-size: 13px;
+               }
+            .ns1,.ns2,.ns4,.ns5,.ns6{
+                margin-top: -30px;
+                margin-left: 20px;
+                font-size: 15px;
+            }
+            .shoppingimg1{
+                margin-top: -355px;
+                margin-left: 250px;
+            }
+            .shoppingimg2{
+                margin-top: -355px;
+                margin-left: 500px;
+            }
+            .shoppingimg3{
+                margin-top: -385px;
+                margin-left:750px;
+            }
+            .shoppingimg4{
+                margin-top: -375px;
+                margin-left: 1000px;
+            }
+            .shoppingimg5{
+                margin-top: -340px;
+                margin-left: 1260px;
+            }
+            .aaa{
+                background-color:green;
+                color: white;
+                width: 110px;
+                height: 20px;
+                display: flex;
+                justify-content: center;
+                border-top-right-radius:25px ;
+                border-bottom-left-radius: 25px;
+                margin-top: -10px;
+            }
+            .symbol4{
+                font:10px;
+                margin-top: 5px;
+            }
+        .in{
+                margin-top: -40px;
+                margin-left: 110px;
+            }
+.no3{
+     margin-top: -35px;
+     margin-left: 10px;
+     font-size: 20px;
+}
+.ns3{
+margin-top: -20px;
+}
+.hr1{
+    margin-top: 100px;
+
+}
+.see{
+    margin-top: 50px;
+    display:flex;
+    justify-content: center;
+    font-size: 16px;
+}
+.sign{
+    margin-left: 620px;
+    background-color: rgb(161, 235, 13);
+width:250px;
+height: 30px;
+border-radius: 10px;
+border-color: white;
+color: black;
+font-weight: bold;
+cursor: pointer;
+}
+.new{
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+}
+.start{
+    margin-left: 790px;
+    margin-top: -15px;
+    font-size: 13px;
+}
+.hr2{
+    margin-top: 40px;
+
+}
+.container14{
+    background-color: darkslategrey;
+    width:100% ;
+    height: 50px;
+}
+.back{
+    position: absolute;
+    margin-left: 700px;
+    margin-top: 10px;
+    color: white;
+    font-size: 20px;
+}
+.container14:hover{
+    opacity: 0.9;
+}
+.container15{
+    background-color: black;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav .search{
+    display: flex;
+    margin: auto 0;
+    height: 35px;
+}
+ nav .search input{
+    height: 100%;
+    padding: 0 10px;
+    font-size: 20px;
+    width: 350px;
+
+}
+.container20{
+    background-color:white;
+    width: 100%;
+    height: 500px;
+
+}
+    
+
+            
+        </style>
+</head>
+<body>
+    <div class="container15">
+        <nav>
+        <input type="text" id="twotabsearchtextbox" value="" name="field-keywords" placeholder="Search Amazon" class="search">
+        </nav>
+    </div>
+    <div class="container11">
+    <nav>
+        <div class="container12">
+        <div class="nav"> </div>
+      <div class="nav1"> </div>
+        <div class="nav2"> </div>
+        <div class="all"> All </div>
+        </div>
+        <a href="https://www.amazon.com/gp/goldbox?ref_=nav_cs_gb&discounts-widget=%2522%257B%255C%2522state%255C%2522%253A%257B%255C%2522refinementFilters%255C%2522%253A%257B%257D%257D%252C%255C%2522version%255C%2522%253A1%257D%2522" target="blank"> Today's deals </a>
+        <a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=508510&ref_=nav_cs_customerservice" target="blank"> Customer Service </a>
+        <a href="https://www.amazon.com/registries?ref_=nav_cs_registry&ref_=nav_cs_registry" target="blank"> Registry </a>
+        <a href="https://www.amazon.com/gift-cards/b/?ie=UTF8&node=2238192011&ref_=nav_cs_gc" target="blank">Gift Cards </a>
+        <a href="https://www.amazon.com/b/?_encoding=UTF8&ld=AZUSSOA-sell&node=12766669011&ref_=nav_cs_sell" target="blank"> Sell </a> 
+    </nav>
+    </div>
+    <div class="top"><a href="https://www.amazon.com/b/?_encoding=UTF8&ie=UTF8&node=23466307011&pd_rd_w=qBPVL&content-id=amzn1.sym.f8d62906-a452-4f4d-b404-3d26f153fbdc&pf_rd_p=f8d62906-a452-4f4d-b404-3d26f153fbdc&pf_rd_r=JY84SK9G1AM8KPCC9YQS&pd_rd_wg=TAHMp&pd_rd_r=bce06389-14c1-489e-81e6-02b85f610b99&ref_=pd_hp_d_hero_unk" target="blank"> <img src="10.jpg"></a></div>
+    <div class="sai"> <marquee scrollamount="10">You are amazon.com. You can also shop on Amazon India for millons of product with fast local delivery.</marquee></div> 
+       <div class="container">
+        <p class="gaming">Gaming accessories </p>
+        <div class="head"><a href="https://www.amazon.com/s?k=gaming+headsets&_encoding=UTF8&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&pd_rd_r=1bd882ca-108b-4f9b-8385-887660f0e187&pd_rd_w=kVP6r&pd_rd_wg=vmzss&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=BQY471CMAH5VAG63R6VR&ref=pd_hp_d_atf_unk" target="_blank"> <img src="2.jpg"></a> <p class="hear" > Headsets </p></div>
+    <div class="key"><a href="https://www.amazon.com/s?k=gaming+keyboard&_encoding=UTF8&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&pd_rd_r=1bd882ca-108b-4f9b-8385-887660f0e187&pd_rd_w=kVP6r&pd_rd_wg=vmzss&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=BQY471CMAH5VAG63R6VR&ref=pd_hp_d_atf_unk" target="blank"> <img src="3.jpg"> </a> <p class="boards"> Keyboards </p> </div>
+    <div class="mouse"><a href="https://www.amazon.com/s?k=gaming+mouse&_encoding=UTF8&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&pd_rd_r=1bd882ca-108b-4f9b-8385-887660f0e187&pd_rd_w=kVP6r&pd_rd_wg=vmzss&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=BQY471CMAH5VAG63R6VR&ref=pd_hp_d_atf_unk" target="blank"><img src="4.jpg"> </a><p class="mouse1"> Mouses </p></div>
+    <div class="chair"><a href="https://www.amazon.com/s?k=gaming+chairs&_encoding=UTF8&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&pd_rd_r=1bd882ca-108b-4f9b-8385-887660f0e187&pd_rd_w=kVP6r&pd_rd_wg=vmzss&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=BQY471CMAH5VAG63R6VR&ref=pd_hp_d_atf_unk" target="blank"> <img src="6.jpg"></a><p class="chair1"> chairs </p></div>
+    </div>
+    <div class="container1">
+        <div class="space">Refresh your space </div>
+        <div class="water"><a href="https://www.amazon.com/s?k=Dinnerware+%26+accessories&_encoding=UTF8&content-id=amzn1.sym.68f2b66e-afdb-4a19-b88c-555da04d6dc2&crid=IBML6MYDLJ4A&pd_rd_r=6661405a-2a0d-4baa-a98f-506dbdce924a&pd_rd_w=8PqNC&pd_rd_wg=lGynY&pf_rd_p=68f2b66e-afdb-4a19-b88c-555da04d6dc2&pf_rd_r=CRRVGW17DYNSGKZFSHGK&sprefix=dinnerware+%26+accessorie%2Caps%2C190&ref=pd_hp_d_atf_unk" target="blank"><img src="11.jpg"></a><p class="water1"> Dining </p> </div>
+        <div class="home"><a href="https://www.amazon.com/s?k=Home&i=kitchen-intl-ship&_encoding=UTF8&content-id=amzn1.sym.68f2b66e-afdb-4a19-b88c-555da04d6dc2&crid=1QBODY970JKYC&pd_rd_r=6661405a-2a0d-4baa-a98f-506dbdce924a&pd_rd_w=8PqNC&pd_rd_wg=lGynY&pf_rd_p=68f2b66e-afdb-4a19-b88c-555da04d6dc2&pf_rd_r=CRRVGW17DYNSGKZFSHGK&sprefix=home%2Ckitchen-intl-ship%2C164&ref=pd_hp_d_atf_unk" target="blank"><img src="12.jpg"></a> <p class="home1"> Home </p></div>
+        <div class="kitchen"><a href="https://www.amazon.com/s?k=Kitchen&i=kitchen-intl-ship&_encoding=UTF8&content-id=amzn1.sym.68f2b66e-afdb-4a19-b88c-555da04d6dc2&crid=2LRTV3593NEHX&pd_rd_r=6661405a-2a0d-4baa-a98f-506dbdce924a&pd_rd_w=8PqNC&pd_rd_wg=lGynY&pf_rd_p=68f2b66e-afdb-4a19-b88c-555da04d6dc2&pf_rd_r=CRRVGW17DYNSGKZFSHGK&sprefix=kitchen%2Ckitchen-intl-ship%2C202&ref=pd_hp_d_atf_unk" target="blank"><img src="13.jpg"></a><p class="kitchen1">Ketchen </p></div>
+        <div class="health"><a href="https://www.amazon.com/s?k=health+and+beauty&i=beauty-intl-ship&_encoding=UTF8&content-id=amzn1.sym.68f2b66e-afdb-4a19-b88c-555da04d6dc2&crid=2036DM6EKNYNA&pd_rd_r=6661405a-2a0d-4baa-a98f-506dbdce924a&pd_rd_w=8PqNC&pd_rd_wg=lGynY&pf_rd_p=68f2b66e-afdb-4a19-b88c-555da04d6dc2&pf_rd_r=CRRVGW17DYNSGKZFSHGK&sprefix=health+and+beauty%2Cbeauty-intl-ship%2C173&ref=pd_hp_d_atf_unk" target="blank"><img src="14.jpg"></a><p class="health1">Health and Beauty </p></div>
+        </div>
+<div class="container2">
+    <div class="deals"> Deals in PCs</div>
+    <div class="shop"><a href="https://www.amazon.com/gp/goldbox/?ie=UTF8&deals-widget=%257B%2522version%2522%253A1%252C%2522viewIndex%2522%253A0%252C%2522presetId%2522%253A%252219A70421F1B18305BA3C837E25E8FDF9%2522%252C%2522departments%2522%253A%255B%2522541966%2522%255D%252C%2522sorting%2522%253A%2522FEATURED%2522%257D&pd_rd_w=f8dzj&content-id=amzn1.sym.3a6a1f11-a96c-444b-b219-97322616eb92&pf_rd_p=3a6a1f11-a96c-444b-b219-97322616eb92&pf_rd_r=87G5NQQJMRAJK39WA622&pd_rd_wg=r5rNN&pd_rd_r=22912e92-25bd-4e35-953e-b912c48ed0d9&ref_=pd_hp_d_atf_unk&discounts-widget=%2522%257B%255C%2522state%255C%2522%253A%257B%255C%2522refinementFilters%255C%2522%253A%257B%257D%257D%252C%255C%2522version%255C%2522%253A1%257D%2522#dealsGridLinkAnchor" target="blank"> <img src="15.jpg"></a> </div>
+</div>
+<div class="container3">
+    <div class="fashon2">Best Fashon Deals </div>
+    <div class="fashon"><a href="https://www.amazon.com/Carhartt-Workwear-Short-Sleeve-T-Shirt-X-Large/dp/B002GHC19I/?_encoding=UTF8&pd_rd_w=T3a0o&content-id=amzn1.sym.9929d3ab-edb7-4ef5-a232-26d90f828fa5&pf_rd_p=9929d3ab-edb7-4ef5-a232-26d90f828fa5&pf_rd_r=D5JBXCVR15RYS4347RMZ&pd_rd_wg=CsrWS&pd_rd_r=c1ecfdef-6845-434e-b897-02e46d0637f1&ref_=pd_hp_d_btf_crs_zg_bs_7141123011" target="blank"><img src="17.jpg"></a> <p class="mens"> Mens</p></div> 
+    <div class="fashon1"><a href="https://www.amazon.com/Fihapyli-Racerback-Backless-Athletic-Exercise/dp/B087C5NWVG/?_encoding=UTF8&pd_rd_w=T3a0o&content-id=amzn1.sym.9929d3ab-edb7-4ef5-a232-26d90f828fa5&pf_rd_p=9929d3ab-edb7-4ef5-a232-26d90f828fa5&pf_rd_r=D5JBXCVR15RYS4347RMZ&pd_rd_wg=CsrWS&pd_rd_r=c1ecfdef-6845-434e-b897-02e46d0637f1&ref_=pd_hp_d_btf_crs_zg_bs_7141123011" target="blank"> <img src="18.jpg"></a><p class="womens"> Womens </p><p class="name8"> Up to 50% off </p><p class="name9"> offer ends in  2 days</p> </div>
+</div>
+<div class="container4">
+    <div class="sports"> Best Sellers in Sports & Outdoors</div>
+    <div class="tech"><a href="https://www.amazon.com/Amazon-Basics-Neoprene-10-Pounds-Kilograms/dp/B01LR5RO5U/?_encoding=UTF8&pd_rd_w=cYrPh&content-id=amzn1.sym.9929d3ab-edb7-4ef5-a232-26d90f828fa5&pf_rd_p=9929d3ab-edb7-4ef5-a232-26d90f828fa5&pf_rd_r=V8WNF8QYQM256G81RZK6&pd_rd_wg=DESCE&pd_rd_r=4f39f5b4-a15b-4413-b694-3c0a2b56889d&ref_=pd_hp_d_btf_crs_zg_bs_3375251&th=1" target="blank"><img src="21.jpg"> </a></div>
+<div class="tech1"><a href="https://www.amazon.com/Hydro-Flask-Around-Travel-Tumbler/dp/B0CKTZGQ7T/?_encoding=UTF8&pd_rd_w=cYrPh&content-id=amzn1.sym.9929d3ab-edb7-4ef5-a232-26d90f828fa5&pf_rd_p=9929d3ab-edb7-4ef5-a232-26d90f828fa5&pf_rd_r=V8WNF8QYQM256G81RZK6&pd_rd_wg=DESCE&pd_rd_r=4f39f5b4-a15b-4413-b694-3c0a2b56889d&ref_=pd_hp_d_btf_crs_zg_bs_3375251" target="blank"><img src="22.jpg"></a></div>
+<div class="tech2"><a href="https://www.amazon.com/Fit-Simplify-Resistance-Exercise-Instruction/dp/B01AVDVHTI/?_encoding=UTF8&pd_rd_w=cYrPh&content-id=amzn1.sym.9929d3ab-edb7-4ef5-a232-26d90f828fa5&pf_rd_p=9929d3ab-edb7-4ef5-a232-26d90f828fa5&pf_rd_r=V8WNF8QYQM256G81RZK6&pd_rd_wg=DESCE&pd_rd_r=4f39f5b4-a15b-4413-b694-3c0a2b56889d&ref_=pd_hp_d_btf_crs_zg_bs_3375251" target="blank"> <img src="23.jpg"></a></div>    
+<div class="tech3"><a href="https://www.amazon.com/Intex-Elevated-Dura-Beam-Internal-Electric/dp/B0869HGSVL/?_encoding=UTF8&pd_rd_w=cYrPh&content-id=amzn1.sym.9929d3ab-edb7-4ef5-a232-26d90f828fa5&pf_rd_p=9929d3ab-edb7-4ef5-a232-26d90f828fa5&pf_rd_r=V8WNF8QYQM256G81RZK6&pd_rd_wg=DESCE&pd_rd_r=4f39f5b4-a15b-4413-b694-3c0a2b56889d&ref_=pd_hp_d_btf_crs_zg_bs_3375251" target="blank"> <img src="24.jpg"></a></div>
+<div class="tech4"><a href="https://www.amazon.com/AmazonBasics-Extra-Thick-Exercise-Carrying/dp/B01LP0U5X0/?_encoding=UTF8&pd_rd_w=cYrPh&content-id=amzn1.sym.9929d3ab-edb7-4ef5-a232-26d90f828fa5&pf_rd_p=9929d3ab-edb7-4ef5-a232-26d90f828fa5&pf_rd_r=V8WNF8QYQM256G81RZK6&pd_rd_wg=DESCE&pd_rd_r=4f39f5b4-a15b-4413-b694-3c0a2b56889d&ref_=pd_hp_d_btf_crs_zg_bs_3375251" target="blank"> <img src="25.jpg"> </a></div>
+</div>
+<div class="container5">
+    <div class="giftsdad"> Deals on gifts for Dad</div>
+    <div class="gifts"><a href="https://www.amazon.com/s?k=tech+gifts+for+men&_encoding=UTF8&content-id=amzn1.sym.36b3bd24-30cc-4394-a99c-32175deb1058&pd_rd_r=b8eb1b05-b169-4429-a155-19c4eec57396&pd_rd_w=bB3jw&pd_rd_wg=qHwCt&pf_rd_p=36b3bd24-30cc-4394-a99c-32175deb1058&pf_rd_r=V8WNF8QYQM256G81RZK6&ref=pd_hp_d_atf_unk" target="blank"><img src="19.jpg"></a><p class="name"> Tech </p> </div>
+    <div class="gifts1"><a href="https://www.amazon.com/s?k=adventure+gear+men&_encoding=UTF8&content-id=amzn1.sym.36b3bd24-30cc-4394-a99c-32175deb1058&pd_rd_r=b8eb1b05-b169-4429-a155-19c4eec57396&pd_rd_w=bB3jw&pd_rd_wg=qHwCt&pf_rd_p=36b3bd24-30cc-4394-a99c-32175deb1058&pf_rd_r=V8WNF8QYQM256G81RZK6&ref=pd_hp_d_atf_unk" target="blank"> <img src="26.jpg"></a><p class="name1"> Adventure gear </p></div>
+    <div class="gifts2"><a href="https://www.amazon.com/s?k=unique+gifts+for+men&_encoding=UTF8&content-id=amzn1.sym.36b3bd24-30cc-4394-a99c-32175deb1058&pd_rd_r=b8eb1b05-b169-4429-a155-19c4eec57396&pd_rd_w=bB3jw&pd_rd_wg=qHwCt&pf_rd_p=36b3bd24-30cc-4394-a99c-32175deb1058&pf_rd_r=V8WNF8QYQM256G81RZK6&ref=pd_hp_d_atf_unk" target="blank"><img src="27.jpg"></a><p class="name2"> Unique finds </p></div>
+    <div class="gifts3"><a href="https://www.amazon.com/s?k=mens+personal+care+sets&_encoding=UTF8&content-id=amzn1.sym.36b3bd24-30cc-4394-a99c-32175deb1058&pd_rd_r=b8eb1b05-b169-4429-a155-19c4eec57396&pd_rd_w=bB3jw&pd_rd_wg=qHwCt&pf_rd_p=36b3bd24-30cc-4394-a99c-32175deb1058&pf_rd_r=V8WNF8QYQM256G81RZK6&ref=pd_hp_d_atf_unk" target="blank"> <img src="28.jpg"></a><p class="name3"> Health & wellness</p> </div>
+</div>
+<div class="container6">
+    <div class="personal"> Best Personal Care & Beauty </div>
+    <div class="beauty"><a href="https://www.amazon.com/Mielle-Rosemary-Mint-Scalp-Strengthening/dp/B07N7PK9QK/?_encoding=UTF8&pd_rd_w=rkS0U&content-id=amzn1.sym.9929d3ab-edb7-4ef5-a232-26d90f828fa5&pf_rd_p=9929d3ab-edb7-4ef5-a232-26d90f828fa5&pf_rd_r=V8WNF8QYQM256G81RZK6&pd_rd_wg=DESCE&pd_rd_r=4f39f5b4-a15b-4413-b694-3c0a2b56889d&ref_=pd_hp_d_btf_crs_zg_bs_3760911" target="blank"> <img src="31.jpg"></a><p class="name4"> Mielle </p> </div>
+    <div class="beauty1"><a href="https://www.amazon.com/Neutrogena-Cleansing-Towelettes-Waterproof-Alcohol-Free/dp/B00U2VQZDS/?_encoding=UTF8&pd_rd_w=rkS0U&content-id=amzn1.sym.9929d3ab-edb7-4ef5-a232-26d90f828fa5&pf_rd_p=9929d3ab-edb7-4ef5-a232-26d90f828fa5&pf_rd_r=V8WNF8QYQM256G81RZK6&pd_rd_wg=DESCE&pd_rd_r=4f39f5b4-a15b-4413-b694-3c0a2b56889d&ref_=pd_hp_d_btf_crs_zg_bs_3760911" target="blank"> <img src="33.jpg"></a><p class="name5"> Makeup Remover</p> </div>
+</div>
+<div class="container7">
+    <div class="toys"> Toys under $25 </div>
+    <div class="toy"><a href="https://www.amazon.com/s?k=toys&rh=p_36%3A-2500&_encoding=UTF8&content-id=amzn1.sym.44da4965-9668-4613-bec2-a3a75f0c2ad4&pd_rd_r=b8eb1b05-b169-4429-a155-19c4eec57396&pd_rd_w=bvHg9&pd_rd_wg=qHwCt&pf_rd_p=44da4965-9668-4613-bec2-a3a75f0c2ad4&pf_rd_r=V8WNF8QYQM256G81RZK6&ref=pd_hp_d_atf_unk" target="blank"> <img src="35.jpg"></a>  </div>
+</div>
+<div>
+    <div class="container8">
+        <div class="topdeal"> Top Deal  </div> 
+        <div class="topdeals"> <a href="https://www.amazon.com/deal/edeb02d3/?_encoding=UTF8&_encoding=UTF8&ref_=dlx_gate_dd_dcl_tlt_edeb02d3_dt_pd_hp_d_atf_unk&pd_rd_w=uMKcS&content-id=amzn1.sym.def2f06c-d9a7-4927-8433-aa333a9fca53&pf_rd_p=def2f06c-d9a7-4927-8433-aa333a9fca53&pf_rd_r=V8WNF8QYQM256G81RZK6&pd_rd_wg=qHwCt&pd_rd_r=b8eb1b05-b169-4429-a155-19c4eec57396" target="blank"> <img src="36.jpg"></a><p class="name6"> Up to 31% off</p> <p class="name7">Limited time deal  </p> <p> ODODOS Sports Apparel and Bags </p> </div>
+</div>
+<div class="container9">
+    <div class="under">Deals Under $25 </div>
+    <div class="under25"><a href="https://www.amazon.com/Ultimate-Bible-Guide-Kendell-Easley/dp/1462776639/?_encoding=UTF8&_encoding=UTF8&ref_=dlx_gate_sd_dcl_tlt_68a3b962_dt_pd_hp_d_btf_unk&pd_rd_w=ILrXy&content-id=amzn1.sym.81a68cec-8afc-4296-99f7-78cf5ddc15b5&pf_rd_p=81a68cec-8afc-4296-99f7-78cf5ddc15b5&pf_rd_r=622Z7AHZP2NMJ46EPC2R&pd_rd_wg=ZpByZ&pd_rd_r=b1f900d6-5be3-493a-b86f-6dad59bb2976" target="blank"><img src="37.jpg"></a><p class="name10"> 38% off </p><p class="name11"> Limited time deal </p><p class="name13"> $7.99 </p> <p class="name14"> List price:</p> <p class="name15"> $12.99</p> <p class="name12"> Ultimate Bible Guide:A Complete Wal...</p> </div>
+    <div class="under251"><a href="https://www.amazon.com/ANIME-HEROES-Bleach-Ichigo-Action/dp/B0C76FGJC6/?_encoding=UTF8&_encoding=UTF8&ref_=dlx_gate_sd_dcl_tlt_93ae159b_dt_pd_hp_d_btf_unk&pd_rd_w=ILrXy&content-id=amzn1.sym.81a68cec-8afc-4296-99f7-78cf5ddc15b5&pf_rd_p=81a68cec-8afc-4296-99f7-78cf5ddc15b5&pf_rd_r=622Z7AHZP2NMJ46EPC2R&pd_rd_wg=ZpByZ&pd_rd_r=b1f900d6-5be3-493a-b86f-6dad59bb2976" target="blank"> <img src="40.jpg "></a><p class="name16"> 40% off </p><p class="name17"> Limited time deal</p><p class="name18"> $11.77 </p> <p class="name19">List price: </p><p class="name20"> $21.99</p> <p class="name21"> ANIME HEROES - Bleach-White Ichig...</p></div>
+    <div class="under252"><a href="https://www.amazon.com/Guide-United-States-Coins-Spiral/dp/0794850146/?_encoding=UTF8&_encoding=UTF8&ref_=dlx_gate_sd_dcl_tlt_05770cfe_dt_pd_hp_d_btf_unk&pd_rd_w=ILrXy&content-id=amzn1.sym.81a68cec-8afc-4296-99f7-78cf5ddc15b5&pf_rd_p=81a68cec-8afc-4296-99f7-78cf5ddc15b5&pf_rd_r=622Z7AHZP2NMJ46EPC2R&pd_rd_wg=ZpByZ&pd_rd_r=b1f900d6-5be3-493a-b86f-6dad59bb2976" target="blank"> <img src="41.jpg"></a><p class="name22">20% off </p> <p class="name23">Limited time deal</p> <p class="name24"> $14.36 </p><p class="name25"> List price:</p><p class="name26"> $17.95</p> <p class="name27"> Guide Book of United States Coins 20...</p></div>
+    <div class="under253"><a href="https://www.amazon.com/Learn-Buttons-Perfect-Introduction-Listen/dp/1628854898/?_encoding=UTF8&_encoding=UTF8&ref_=dlx_gate_sd_dcl_tlt_3a537d24_dt_pd_hp_d_btf_unk&pd_rd_w=ILrXy&content-id=amzn1.sym.81a68cec-8afc-4296-99f7-78cf5ddc15b5&pf_rd_p=81a68cec-8afc-4296-99f7-78cf5ddc15b5&pf_rd_r=622Z7AHZP2NMJ46EPC2R&pd_rd_wg=ZpByZ&pd_rd_r=b1f900d6-5be3-493a-b86f-6dad59bb2976" target="blank"> <img  src="42.jpg"></a><p class="name28">16% off </p><p class="name29">Limited time deal </p><p class="name30"> $14.35</p><p class="name31">List Price: </p> <p class="name32">$16.99 </p><p class="name33"> 27-button Sond Book Let's Learn Ab... </p></div>
+    <div class="under254"><a href="https://www.amazon.com/Learning-Resources-New-Sprouts-Stir/dp/B00OZTHPJQ/?_encoding=UTF8&_encoding=UTF8&ref_=dlx_gate_sd_dcl_tlt_c8b63007_dt_pd_hp_d_btf_unk&pd_rd_w=ILrXy&content-id=amzn1.sym.81a68cec-8afc-4296-99f7-78cf5ddc15b5&pf_rd_p=81a68cec-8afc-4296-99f7-78cf5ddc15b5&pf_rd_r=622Z7AHZP2NMJ46EPC2R&pd_rd_wg=ZpByZ&pd_rd_r=b1f900d6-5be3-493a-b86f-6dad59bb2976" target="blank"><img src="43.jpg"></a><p class="name34"> 20% off</p><p class="name35"> Limited time deal </p><p class="name36"> $22.39</p><p class="name37"> List Price: </p><p class="name38"> $27.99</p><p class="name39"> Learning Resources New Sprouts Stir F... </p></div>
+</div>
+<div class="container10"> <p class="hr"> <hr> </p>
+    <div class="shopping"> Gift ideas inspired by your shopping history</div>
+     <div class="shoppingimg"><a href="https://www.amazon.com/Lincoln-1909-1958-Collectors-Warmans-Collector/dp/1440213267/ref=sr_1_1?crid=1P3UWTC4GAWK1&dib=eyJ2IjoiMSJ9.RdoqU6Rd15ie8v-zExdYRG7i67mlaNB0FyCDmu-bK4nMnZ4Ti6vnkYaf_-NvCIwGZZzDDD6vUe_ltJ1-zkMgRwWOlCmKcP5XNWaJscgewi6wbL3AXx7lsm6iDobmWrRQrA6_brA8KXnJxtzFhuA3F9ZdRT2WpwAkSVXsWitDJLRD9nUg2hL8s3I6PKGKW-SPaK-f2Fockz2jT2zugiWqTyqklwRh3jjbBndexE5MW_U.9pjSlEkudxQIYSfBCHXPmvUT_p8DG6TM2jYXwOevRWQ&dib_tag=se&keywords=lincoln+cent+book&qid=1716381529&sprefix=licon+cents+boo%2Caps%2C444&sr=8-1" target="blank"><img src="44.jpg"><p class="your1"> Lincoln Cents 1909-1958 <br> Collector's Folder <br> (Warman's Collector Co...</p></a><p class="your2"><a href="https://www.amazon.com/stores/Warmans/author/B00MG84T1U?ref=ap_rdr&isDramIntegrated=true&shoppingPortalEnabled=true">by Warmen's</p></a><div class="container13"><p class="star1">&#9734;&#9734;&#9734;&#9734;</p><p class="star2"> &#9734;</p><p class="font"> 2,590</p><p class="n1"> Hardcover </p><p class="symbol"> $ </p> <p class="no1"> 5.99 </p> <p class ="symbol1"> $ </p><p class="ns1"> 5.99 shipping </p></div>
+     <div class="shoppingimg1"><a href="https://www.amazon.com/Learning-Resources-Sprouts-Multicultural-Pieces/dp/B01A5YLYDM/ref=pd_rhf_gw_s_pd_sbs_rvi_d_sccl_1_2/144-5655408-3769532?pd_rd_w=valTs&content-id=amzn1.sym.d5318d7f-f25b-4b36-88ea-c8d538d27fdf&pf_rd_p=d5318d7f-f25b-4b36-88ea-c8d538d27fdf&pf_rd_r=MXM12RWRRHHTK8BH370V&pd_rd_wg=hvDlB&pd_rd_r=ccd15a42-5db5-4874-9061-fe458e7675ce&pd_rd_i=B01A5YLYDM&psc=1" target="blank"><img src="46.jpg"><p class="your3">Learning Resources New<br>Sporouts Multicultural Play<br>Food Set - 15 Pieces,<br>Ages 18+ Months Pretend<br>Play Food, for Toddlers,...</p></a><p class="star3">&#9734;&#9734;&#9734;<p><p class="star4">&#9734;&#9734;</p><p class="font1">600 </p><p class="symbol2"> $ </p><p class="no2">20.68 </p><p class="symbol3">$ </p><p class="ns2"> 19.76 shipping</p> </div>
+     <div class="shoppingimg2"><a href="https://www.amazon.com/Rose-Book-Bible-Charts-Lines/dp/1596360224/ref=pd_rhf_gw_s_gcx-rhf_d_sccl_1_25/144-5655408-3769532?pd_rd_w=coYlf&content-id=amzn1.sym.f714e129-a2ad-4639-b076-38ae36a3f73b&pf_rd_p=f714e129-a2ad-4639-b076-38ae36a3f73b&pf_rd_r=QGW2T8A8ABTPW971BZNZ&pd_rd_wg=Xq7N0&pd_rd_r=873d311f-d045-4336-a320-b1f50d72e489&pd_rd_i=1596360224&psc=1" target="blank"><img src="48.jpg" ><p class="your4"> Coin Collecting Bible: The<br>#1 beginner to Advanced<br>Coin Book | Learn the... </p></a> <p class="your5" ><a href="https://www.amazon.com/stores/Rose-Publishing/author/B078WHTD18?ref=ap_rdr&isDramIntegrated=true&shoppingPortalEnabled=true"> >Rose Publishing</p></a> <p class="star5">&#9734;&#9734;&#9734;&#9734;&#9734;</p><p class="font3">7,086 </p> <p class="n1">Spiral-bound</p><p class="aaa">#1 Best Seller </p><p class="in"> in Religion</p> <p class="symbol4"> $</p><p class="no3">24.99 </p><p class="ns3"> $16.26shipping </p></div>
+     <div class="shoppingimg3"><a href="https://www.amazon.com/ABC-123-Learning-Songs-Interactive/dp/1680521470/ref=pd_rhf_gw_s_pd_sbs_rvi_d_sccl_1_41/144-5655408-3769532?pd_rd_w=hGC0R&content-id=amzn1.sym.d5318d7f-f25b-4b36-88ea-c8d538d27fdf&pf_rd_p=d5318d7f-f25b-4b36-88ea-c8d538d27fdf&pf_rd_r=7D3KVANPGYJGP5WPSVTZ&pd_rd_wg=DBF10&pd_rd_r=a9eb92da-8367-4145-8981-31c585fd5083&pd_rd_i=1680521470&psc=1" target="blank"> <img src="49.jpg"><p class="your6">ABC & 123 Learning<br>Songs:Interactive<br>(11 Button Sound Book<br>(11 Button Sound) (11...  </p></a><p class="your7"><a href="https://www.amazon.com/stores/Scarlett-Wing/author/B071CYVLQM?ref=ap_rdr&isDramIntegrated=true&shoppingPortalEnabled=true" target="blank">Scarlett Wing </p></a><p class="star6"> &#9734;&#9734;&#9734;&#9734;</p><p class="star7">&#9734;</p><p class="font4">4,455 </p> <p class="n4">Hardcover </p> <p class="symbol5">$</p><p class="no4">11.49 </p><p class="symbol6">$</p><p class="ns4"> 12.20 shipping</p></div>
+     <div class="shoppingimg4"><a href="https://www.amazon.com/Melissa-Doug-Food-Combine-Dinners/dp/B01B1UPVM4/ref=pd_rhf_gw_s_pd_sbs_rvi_d_sccl_1_31/144-5655408-3769532?pd_rd_w=OsAAr&content-id=amzn1.sym.d5318d7f-f25b-4b36-88ea-c8d538d27fdf&pf_rd_p=d5318d7f-f25b-4b36-88ea-c8d538d27fdf&pf_rd_r=D8CB1GZYWGRWJ308GDJ6&pd_rd_wg=7STzB&pd_rd_r=83b3252c-613b-4275-8fd8-08c213d8a640&pd_rd_i=B01B1UPVM4&psc=1" target="blank"> <img src="50.jpg"><p class="your8">Melissa & Doug Food Fun<br>Combine & Dine Dinners -<br>Blue</p></a><p class="star8">&#9734;&#9734;&#9734;&#9734;&#9734;</p><p class="font5">2,181</p><p class="symbol7">$</p><p class="no5"> 31.57</p><p class="symbol8">$</p><p class="ns5">20.86 shipping</p> </div>
+     <div class="shoppingimg5"><a href="https://www.amazon.com/Learning-Resources-Counting-Cans-Pieces/dp/B0034IQB76/ref=pd_rhf_gw_s_pd_sbs_rvi_d_sccl_1_32/144-5655408-3769532?pd_rd_w=OsAAr&content-id=amzn1.sym.d5318d7f-f25b-4b36-88ea-c8d538d27fdf&pf_rd_p=d5318d7f-f25b-4b36-88ea-c8d538d27fdf&pf_rd_r=D8CB1GZYWGRWJ308GDJ6&pd_rd_wg=7STzB&pd_rd_r=83b3252c-613b-4275-8fd8-08c213d8a640&pd_rd_i=B0034IQB76&psc=1" target="blank"><img src="51.jpg"><p class="your9">Learning Resources One<br>TO TEn Counting Cans -<br>65 Pices, Ages 3+<br>Toddler Learning Toyes,<br>Preschool Prented Play,<br>Toys,Supermarket Toys </p ></a> <p class="star9">&#9734;&#9734;&#9734;&#9734;</p><p class="star10">&#9734;</p><p class="font6">952</p><p class="symbol9">$</p><p class="no6">44.79</p><p class="symbol10">$</p><p class="ns6">20.44 shipping</p></div>
+     <div class="hr1"> <hr> </div>
+     <div class="see"> See personalized recommendations</div>
+    <a href="https://www.amazon.com/ap/signin?openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fref%3Drhf_sign_in&openid.assoc_handle=usflex&openid.pape.max_auth_age=0" target="blank"> <button class="sign">Sign in</button></a>
+    <div class="new">New customer?</div>
+    <div class="start"><a href="https://www.amazon.com/ap/register?openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fref%3Drhf_sign_in&openid.assoc_handle=usflex" target="blank">Start here</div></a>
+    <div class="hr2"> <hr> </div>
+</div>
+<div class="container14">
+    <div class="back"> Back to top</div>
+    </div>
+</div>
+</body>
+</html>
